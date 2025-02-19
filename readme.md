@@ -12,8 +12,8 @@ This is the backend server for Vidplo, a video platform. It handles file uploads
 
 1.  **Clone the repository:**
     ```bash
-    git clone [repository URL]
-    cd vidplo-backend
+    git clone https://github.com/Viola-Network/Vidplo-Backend-OS
+    cd Vidplo-Backend-OS
     ```
 
 2.  **Install Dependencies:**
