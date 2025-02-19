@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Viola Network </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bgcolor: #f0f4f8;
+            --textcolor: #2d3748;
+            --accentcolor: #5a67d8;
+            --graycolor: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #a5b4fc 25%, transparent 25%) -50px 0,
+                        linear-gradient(225deg, #a5b4fc 25%, transparent 25%) -50px 0,
+                        linear-gradient(315deg, #a5b4fc 25%, transparent 25%),
+                        linear-gradient(45deg, #a5b4fc 25%, transparent 25%);
+            background-size: 100px 100px;
+            background-color: var(--bgcolor);
+            opacity: 0.1;
+            z-index: -1;
+            animation: backgroundMove 20s linear infinite;
+        }
+
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100px 100px;
+            }
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--accentcolor);
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--graycolor);
+        }
+
+        .message {
+            background-color: rgba(90, 103, 216, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .message p {
+            color: var(--textcolor);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: var(--graycolor);
+        }
+
+        footer a {
+            color: var(--accentcolor);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--textcolor);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Viola Network</h1>
+        <div class="message">
+            <p>You have reached a machine managed by Viola Network.</p>
+            <p>There's nowhere else to go from here.</p>
+        </div>
+    </div>
+    <footer>
+        <span>By</span> <a href="https://violanetwork.com">VIOLA NETWORK</a>
+    </footer>
+</body>
+</html>
