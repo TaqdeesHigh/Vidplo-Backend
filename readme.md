@@ -284,6 +284,10 @@ This backend provides the following API endpoints.  All endpoints (unless explic
 
 *   The server includes a global error handler that logs errors and returns a 500 Internal Server Error response for unhandled exceptions.
 
+## Credits
+
+- Produced by [Taqdees](https://github.com/TaqdeesHigh) Secured by [Zyleree](https://github.com/Zyleree)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
